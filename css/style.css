@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Bebas Neue Cyrillic";
+    src: local("BebasNeueRegular Cyrillic"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+      url("../fonts/BebasNeueRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+
 * {
     box-sizing: border-box;
 }
@@ -47,4 +57,63 @@ body {
     line-height: 20px;
     text-emphasis: none;
     color: #fff;
+}
+.main-info {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 54px;
+    display: flex;
+}
+.home-img path {
+    opacity: 0;
+    cursor: pointer;
+
+}
+.home-img path:hover {
+    opacity: 1;
+}
+.counter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter-button {
+    cursor: pointer;
+    background: #fff;
+    border: none;
+
+}
+.counter-arrow-down {
+    transform: rotateX(180deg);
+}
+.main-title {
+    font-family: 'Bebas Nenu Cyrillic', sans-serif;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 37px;
+    color: #635854;
+}
+.counter {
+    color: #635854;
+    font-size: 121px;
+    font-family: 'Bebas Nenu Cyrillic', sans-serif;
+    margin-top: 10px;
+}
+.button-primary {
+    background: #3596F5;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 16px 36px;
+    cursor: pointer;
 }
